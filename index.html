@@ -53,8 +53,16 @@ var myText = document.getElementById("helloText");
 
 myButton.addEventListener('click', doSomething, false)
 
+var i = 6
+
+var j = 8
+
+i = j - i
+j = j - i
+i = j + i
+
 function doSomething() {
-	myText.textContent = "hello programming workshops";
+	myText.textContent = "i: " + i + "j: " + j;
 }
 </script>
 
